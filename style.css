@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+:root {
+    --title-font:  "Libre Baskerville", serif;
+    --movie-title-font: "Cinzel", serif;
+}
+
+/* BODY STYLE */
+body {
+    margin: 0;
+    padding: 0;
+    background: #fbfcee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper for the whole page */
+#wrapper {
+    width: 600px;
+    margin: 40px auto;
+    color: #333;
+}
+
+/* Header banner */
+#page-banner {
+    text-align: center;
+    padding: 20px;
+    background: #f6e6a5;
+    border-radius: 10px;
+    color: white;
+}
+
+.title {
+    font-family: var(--title-font);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#3971b8;
+}
+
+/* Movie list section */
+#movie-list {
+    margin: 30px 0;
+}
+
+#movie-list h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Styling the movie items */
+#movie-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+#movie-list li {
+    background: #fbfcee;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#movie-list li:hover {
+    background: #f6e6a5;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Movie name text */
+.name {
+    font-weight: bold;
+    font-family: var(--movie-title-font);
+    color:#3971b8;
+}
+
+/* Delete button style */
+.delete {
+    color:#3971b8;
+    background: #c8d69b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color:#478de8;
+    background: #9ba576;
+}
+
+/* Add movie form area */
+#add-movie {
+    display: flex;
+    gap: 10px;
+}
+
+#add-movie input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#add-movie button {
+    padding: 10px 18px;
+    background: #c8d69b;
+    border: none;
+    border-radius: 8px;
+    color: #3971b8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#add-movie button:hover {
+    color:#478de8;
+    background: #9ba576;
+}
